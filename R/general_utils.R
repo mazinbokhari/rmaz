@@ -1,3 +1,8 @@
+#' @import tidyverse
+#' @import broom
+#' @import plotly
+#' @import magrittr
+
 #' @export
 pass = function(x=NULL){x}
 
