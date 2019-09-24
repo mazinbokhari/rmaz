@@ -7,8 +7,7 @@
 pipe_collapse(input_list)
 }
 \arguments{
-\item{input_list}{the list to be collapsed
-pipe_collapse()}
+\item{input_list}{the list to be collapsed}
 }
 \description{
 This function allows you to collapse a list with the pipe separator (useful for select(matches()) subsetting)
