@@ -17,4 +17,11 @@ pipe_collapse = function(input_list) {
 }
 
 #' @export
-matches_list = function(input) {tidyr::matches(input %>% glue::glue_collapse('|'))}
+matches_list = function(input) {
+    tidyr::matches(input %>% glue::glue_collapse('|'))
+}
+
+#' @export
+zplot = function(df_input) {
+    df_input %>% zoo::read.zoo %>% zoo::autoplot.zoo(facets=NULL) %>% ggplotly
+}
